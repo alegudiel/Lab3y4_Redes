@@ -175,6 +175,21 @@ class Client(slixmpp.ClientXMPP):
                         )
                 print("Graph updated")
 
+        elif message[0] == '3':
+            if message[6] == '':
+                now = datetime.now()
+                timestamp = datetime.timestamp(now)
+                mensaje = messg + str(timestamp)
+                self.send_message(
+                            mto=message[1],
+                            mbody=mensaje,
+                            mtype='chat' 
+                        )
+            else:
+                difference = float(message[6]) - float(message[4])
+                self.graph[self.nodeE][message[5]]['weight'] = difference
+        else:
+            pass
 
     def update_message(self):
         if self.algorithmToUse == '2':

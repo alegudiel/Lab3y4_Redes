@@ -53,8 +53,8 @@ def graphPlot(topo, names):
 
 
 async def main(xmpp: Client):
-    menuOpt = 0
-    while menuOpt != 0:
+    menuOpt = True
+    while menuOpt :
         print("""
         --------------------------------------------------------------
         |                                                              |
