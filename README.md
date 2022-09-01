@@ -12,6 +12,7 @@ It is only necessary to know the final destination and it is forwarded to the ne
 * pycparser
 * pyparsing
 * slixmpp
+* yaml
 
 
 ## How to use?

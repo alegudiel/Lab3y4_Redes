@@ -48,7 +48,6 @@ class DistanceVector():
         self.distance, self.prev = self.bellman_ford(self.graphNx, self.source)
         self.neighbors = self.neighbors(updateGraph, self.source)
 
-
     def shortest_path(self, target):
         for key in self.name:
             if self.name[key] == target:
