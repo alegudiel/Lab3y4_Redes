@@ -18,7 +18,7 @@ It is only necessary to know the final destination and it is forwarded to the ne
 ## How to use?
 * Download the project in: <pre> https://github.com/alegudiel/Lab3y4_Redes.git </pre>
 * Open the project and launch a Terminal or Shell inside of it
-* Verify you have the pre-requisites
+* Using python version 3.7.x run in terminal in the project directory "pip install -r requirements.txt"
 * Go to the 'src' folder
 * Run the project using: <pre> python main.py </pre>
 
